@@ -1,0 +1,92 @@
+.welcome {
+//    background-color: #9ba3cd
+    margin: 50px 0 60px;
+    padding: 0 15% 50px;
+    h2 {
+//        padding-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'Summer Hearts';
+        font-size: 2.5em;
+        color: $brand;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+
+.title{
+    position: absolute;
+    top: -22px;
+    left: 20px;
+    padding: 10px 20px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-family: 'Good Headline Pro';
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: $brand;
+    color: #FFF;
+    z-index: 100;
+}
+
+// title alternative
+//    left: 0px;
+//    border-bottom: 10px solid $bg;
+//    border-right: 10px solid $bg;
+
+.projects {
+    
+    display: flex;
+      flex-wrap: wrap;
+    justify-content: center;
+//    align-items: flex-end;
+    margin-bottom: 200px;
+//        padding: 0 10% 25px;
+    background-color: $bg;
+//    @media screen and (min-width: 768px) {
+//      
+//    }
+}
+
+
+.single-project{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5% 10%;
+    button{
+        margin: 5%;
+        align-self: flex-end;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-size: 1em;
+        border: none;
+        border-bottom: 7px solid $brand;
+        &:hover{
+            border-bottom: 7px solid #9ba3cd;
+        }
+    }
+    
+    img{
+        align-self: center;
+        transition: .3s ease;
+        &:hover{
+            opacity: .7;
+        }
+    }
+         @media screen and (min-width: 600px) {
+            margin: 2.5% 5%;
+            width: calc(80%/2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin: 2.5%;
+            width: calc(80%/4);
+        }
+    
+}
+
+

@@ -1,0 +1,58 @@
+footer{
+    z-index: -55;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 75px 50px 50px;
+    background-color: $brand;
+//    background-color: #000;
+//    border-top: 10px solid $brand;
+    @media screen and (min-width: 600px) {
+        flex-direction: row;
+            justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+
+// social icons
+
+ul.social{
+    margin-top: 20px;
+    display: flex;
+    
+    .fa{
+        margin-left: 1em; 
+    }
+}
+
+.fa{
+    margin-right: .75em;
+    font-size: 1.2em;
+    color: $bg;
+    transition: .3s ease;
+    &:hover{
+        cursor: pointer;
+        color: $text;
+    }
+}
+
+
+.connect{
+    margin-top: 20px;
+    h3{
+        margin-top: 20px;
+        font-family: $bold;
+        font-size: 2em;
+        color: $bg;
+    }
+    a{
+        text-decoration: none;
+        color: $bg;
+        &:hover{
+            border-bottom: 2px solid $bg;
+        }
+    }
+}
