@@ -1,9 +1,9 @@
 .welcome {
-//    background-color: #9ba3cd
+    //    background-color: #9ba3cd
     margin: 50px 0 60px;
     padding: 0 15% 50px;
     h2 {
-//        padding-top: 40px;
+        //        padding-top: 40px;
         margin-bottom: 20px;
         text-align: center;
         font-family: 'Summer Hearts';
@@ -15,78 +15,152 @@
     }
 }
 
-
-.title{
+.title {
     position: absolute;
-    top: -22px;
-    left: 20px;
+    right: -50px;
+    bottom: -40px;
     padding: 10px 20px;
-    align-self: flex-start;
+//    align-self: flex-start;
     text-transform: uppercase;
-    letter-spacing: .05em;
-    font-family: 'Good Headline Pro';
-    font-weight: bold;
+    letter-spacing: .1em;
+//    font-family: 'Good Headline Pro';
+    font-family: 'FreightBig Pro', 'serif';
+    font-weight: 300;
     font-size: 1.3em;
-    background-color: $brand;
-    color: #FFF;
+//    background-color: $brand;
+    color: $text;
     z-index: 100;
+
 }
 
 // title alternative
 //    left: 0px;
 //    border-bottom: 10px solid $bg;
 //    border-right: 10px solid $bg;
-
 .projects {
-    
     display: flex;
-      flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
-//    align-items: flex-end;
+    //    align-items: flex-end;
     margin-bottom: 200px;
-//        padding: 0 10% 25px;
+    //        padding: 0 10% 25px;
     background-color: $bg;
-//    @media screen and (min-width: 768px) {
-//      
-//    }
+    //    @media screen and (min-width: 768px) {
+    //      
+    //    }
 }
 
-
 .single-project{
+    
+}
+
+.square{
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 2.5% 10%;
-    button{
-        margin: 5%;
-        align-self: flex-end;
-        background-color: transparent;
-        text-transform: uppercase;
-        font-size: 1em;
-        border: none;
-        border-bottom: 7px solid $brand;
-        &:hover{
-            border-bottom: 7px solid #9ba3cd;
+    margin: 10% 15%;
+    
+     @media screen and (min-width: 600px) {
+        flex-direction: row;
+//        justify-content: flex-start;
+        &:nth-child(even) {
+            justify-content: flex-end; 
         }
     }
     
-    img{
+
+    
+    img {
+        display: flex;
+        z-index: 5;
         align-self: center;
         transition: .3s ease;
-        &:hover{
+        &:hover {
             opacity: .7;
         }
+        @media screen and (min-width: 600px) {
+//            margin: 2.5% 5%;
+            
+            width: calc(90%/2);
+        }
+        
     }
-         @media screen and (min-width: 600px) {
-            margin: 2.5% 5%;
-            width: calc(80%/2);
-        }
-    
-        @media screen and (min-width: 1200px) {
-            margin: 2.5%;
-            width: calc(80%/4);
-        }
-    
 }
 
 
+button.project-btn{
+//        position: absolute;
+        margin: 5%;
+        padding-right: 25%;
+        align-self: flex-start;
+        background-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-family: 'Good Headline Pro';
+        font-size: 1.1em;
+        border: none;
+        border-top: 1px solid $brand;
+        color: $brand;
+        &:hover {
+            border-bottom: 1px solid #9ba3cd;
+        }
+ 
+                 @media screen and (min-width: 600px) {
+             
+             margin: -10% -10%;
+        padding-right: 25%;
+              &:nth-child(even) {
+
+        }
+        }
+}
+
+.square{
+    
+    z-index: 8;
+//    position: absolute;
+//    width: 80%;
+//    height: 70%;
+//    bottom: -20px;
+//    left: -20px;
+//    background-color: #EEE;
+//    opacity: .95;
+    @media screen and (min-width: 600px) {
+//        width: 50%;
+    }
+}
+
+//.square:after
+//{
+//    display: flex;
+//    align-self: center;
+//    background: #EEE;
+//    opacity: 1;
+//    content: "";
+//    position: absolute;
+//    top: -15%;
+//    left: -15%;
+//    width: 110%;
+//    height: 110%;
+//    z-index: 5;
+//}
+
+
+
+.square-below{
+    
+    
+    z-index: 3;
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    bottom: -20px;
+    right: -20px;
+    background-color: #EEE;
+}
+
+
+
+.logo-colour{
+    color: #EEE;
+}

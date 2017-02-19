@@ -25,12 +25,7 @@
 /* ---------- VARIABLES ---------- */
 /* ------------------------------- */
 
-$bg: #FFF; //#0B0C11;
-$text: #262C3B; //#171717; // #0D0E13; //#FFF;
-$brand: #4175C0; //#39e5c5;//#3EC7C2; // #39e5c5; //#2aedc8; // #80f2dc; // #5cc1af; //#66FCF1; // #6E8ED9; // #4285f4
-$gradient: linear-gradient(to bottom, $brand 0%,#799ed2 100%);
-
-$bold: 'Good Headline Pro', sans-serif;
+@import 'vars';
 
 /* ------------------------------ */
 /* ----------- LAYOUT ----------- */
@@ -39,29 +34,7 @@ $bold: 'Good Headline Pro', sans-serif;
 
 /* -------- LAYOUT MIXIN -------- */
 
-@mixin border-h($color: $brand) {
-    z-index: 10;
-    position: fixed;
-    height: 10px;
-    width: 100%;
-    background-color: $color;
-}
-
-@mixin border-v($color:$brand) {
-    z-index: 9;
-    position: fixed;
-    height: 100%;
-    width: 10px;
-    background-color: $color;
-}
-
-
-@mixin bold-font{
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    font-family: 'Good Headline Pro';
-    font-weight: bold;
-}
+@import 'mixins';
 
 /* ----------------------------- */
 /* ------- LAYOUT STYLES ------- */
@@ -79,7 +52,8 @@ body {
 h1 {
     padding: 40px;
     @include bold-font;
-    font-size: 1.7em;
+    font-weight: 300;
+    font-size: 2em;
     color: $text;
 }
 
@@ -89,7 +63,7 @@ p {
 
 div.form{
     float: right;
-        display: flex;
+    display: flex;
     flex-direction: column;
     /* align-self: center; */
     width: 50%;
