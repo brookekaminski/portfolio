@@ -253,92 +253,38 @@ div.form {
   .nav-main a:focus, .nav-main a:hover, .nav-main a:active {
     color: #262C3B; }
 
-.welcome {
-  margin: 50px 0 60px;
-  padding: 0 15% 50px; }
-  .welcome h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: 'Summer Hearts';
-    font-size: 2.5em;
-    color: #3EC7C2; }
-  .welcome p {
-    text-align: center; }
-
-.title {
-  position: absolute;
-  right: -50px;
-  bottom: -40px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  font-family: 'FreightBig Pro', 'serif';
-  font-weight: 300;
-  font-size: 1.3em;
-  color: #262C3B;
-  z-index: 100; }
-
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 200px;
-  background-color: #FFF; }
+  padding-bottom: 100px;
+  margin: 50px 2.5% 200px;
+  background-color: #FFF;
+  z-index: 1; }
 
-.square {
-  position: relative;
+.project-preview {
+  background-color: coral;
   display: flex;
-  flex-direction: column;
-  margin: 10% 15%; }
+  margin: 15%; }
   @media screen and (min-width: 600px) {
-    .square {
-      flex-direction: row; }
-      .square:nth-child(even) {
+    .project-preview {
+      width: calc(100%/2); }
+      .project-preview:nth-child(even) {
         justify-content: flex-end; } }
-  .square img {
-    display: flex;
-    z-index: 5;
-    align-self: center;
-    transition: .3s ease; }
-    .square img:hover {
-      opacity: .7; }
-    @media screen and (min-width: 600px) {
-      .square img {
-        width: calc(90%/2); } }
-
-button.project-btn {
-  margin: 5%;
-  padding-right: 25%;
-  align-self: flex-start;
-  background-color: transparent;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-family: 'Good Headline Pro';
-  font-size: 1.1em;
-  border: none;
-  border-top: 1px solid #3EC7C2;
-  color: #3EC7C2; }
-  button.project-btn:hover {
-    border-bottom: 1px solid #9ba3cd; }
-  @media screen and (min-width: 600px) {
-    button.project-btn {
-      margin: -10% -10%;
-      padding-right: 25%; } }
 
 .square {
-  z-index: 8; }
-
-.square-below {
-  z-index: 3;
-  position: absolute;
-  width: 80%;
-  height: 70%;
-  bottom: -20px;
-  right: -20px;
-  background-color: #EEE; }
-
-.logo-colour {
-  color: #EEE; }
+  z-index: 2;
+  display: flex;
+  position: relative; }
+  .square:after {
+    display: flex;
+    background: #EEE;
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -5%;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  .square img {
+    align-self: center; }
 
 /* ------------------------------ */
 /* -------- ACCESSIBILITY ------- */

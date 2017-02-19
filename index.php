@@ -9,43 +9,43 @@ include 'header.php';
             <h2>Hey There...</h2>
             <p>This is where I would say something interesting about my porfolio and work that sums it up. </p>
 --></div>
-        <div class="projects">
-            <div class="single-project">
-                           <button class="project-btn">See Project</button>
+       
+    <div class="projects">
+      
+       <div class="project-preview">
+       
+    <div class="square">
+        
+<img src="images/client-project.jpg">
 
-               <div class="square">
-                <h3 class="title">Portfolio</h3>
-
-                <img src="images/client-project.jpg"> 
+    </div>
 </div>
-            </div>
-                       <div class="single-project">
-                           <button class="project-btn">See Project</button>
 
-               <div class="square">
-                <h3 class="title">Portfolio</h3>
+<div class="project-preview">
+      <div class="square">
+        
+<img src="images/client-project.jpg">
 
-                <img src="images/client-project.jpg"> 
+    </div>
 </div>
-            </div>
-                       <div class="single-project">
-                           <button class="project-btn">See Project</button>
 
-               <div class="square">
-                <h3 class="title">Portfolio</h3>
+<div class="project-preview">
+    <div class="square">
+        
+<img src="http://placehold.it/350x350">
 
-                <img src="images/client-project.jpg"> 
+    </div>
 </div>
-            </div>
-                        <div class="single-project">
-                           <button class="project-btn">See Project</button>
 
-               <div class="square">
-                <h3 class="title">Portfolio</h3>
+<div class="project-preview">
+     <div class="square">
+        
+<img src="http://placehold.it/350x350">
 
-                <img src="images/client-project.jpg"> 
+    </div>
 </div>
-            </div>
-        </div>
+       
+    </div>      
+
     </main>
     <?php include('footer.php'); ?>
