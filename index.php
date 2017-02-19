@@ -3,49 +3,77 @@
 include 'header.php';
 
 ?>
-    <main id="content">
-        <div class="welcome">
-            <!--
-            <h2>Hey There...</h2>
-            <p>This is where I would say something interesting about my porfolio and work that sums it up. </p>
---></div>
+   
+   
+   <main>
        
-    <div class="projects">
-      
-       <div class="project-preview">
        
-    <div class="square">
-        
-<img src="images/client-project.jpg">
-
-    </div>
-</div>
-
-<div class="project-preview">
-      <div class="square">
-        
-<img src="images/client-project.jpg">
-
-    </div>
-</div>
-
-<div class="project-preview">
-    <div class="square">
-        
-<img src="http://placehold.it/350x350">
-
-    </div>
-</div>
-
-<div class="project-preview">
-     <div class="square">
-        
-<img src="http://placehold.it/350x350">
-
-    </div>
-</div>
        
-    </div>      
-
-    </main>
-    <?php include('footer.php'); ?>
+        <div class="project">
+           
+           
+           <div class="preview">
+               
+               <a href="#">View Details</a>
+               <img src="images/client-project.jpg" alt="">
+               <h2>Project Name</h2>
+               
+           </div>
+           
+           
+       </div>
+       
+       
+        <div class="project">
+           
+           
+           <div class="preview">
+               
+               <a href="#">View Details</a>
+               <img src="images/client-project.jpg" alt="">
+               <h2>Project Name</h2>
+               
+           </div>
+           
+           
+       </div>
+       
+       
+        <div class="project">
+           
+           
+           <div class="preview">
+               
+               <a href="#">View Details</a>
+               <img src="images/client-project.jpg" alt="">
+               <h2>Project Name</h2>
+               
+           </div>
+           
+           
+       </div>
+       
+        <div class="project">
+           
+           
+           <div class="preview">
+               
+               <a href="#">View Details</a>
+               <img src="images/client-project.jpg" alt="">
+               <h2>Project Name</h2>
+               
+           </div>
+           
+           
+       </div>
+       
+       
+       
+       
+       
+   </main>
+   
+   
+   
+   
+   <?php include('footer.php'); ?>
