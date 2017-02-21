@@ -1,39 +1,55 @@
 .project {
     display: flex;
-    padding: 15%;
+    padding: 75px 20%;
     background-color: $bg;
     &:nth-child(even) {
         justify-content: flex-end;
     }
-    @media screen and (min-width: 600px) {
-        padding: 10%;
+    @media #{$small-width} {
+        padding: 75px 15%;
     }
 }
 
 .preview {
+    z-index: 6;
     position: relative;
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 600px) {
+    &:after{
+        z-index: -1;
+        position: absolute;
+        left: -10%;
+        bottom: -10%;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        background: #EEE;
+        opacity: .95;
+        content: "";
+    }
+     @media #{$small-width} {
         width: calc(100%/2);
     }
-    @media screen and (min-width: 900px) {
+     @media #{$small-width} {
         width: calc(80%/2);
     }
     a {
         align-self: flex-start;
+      @include arrow-font;
+//        border-top: 1px solid $brand;
     }
     img {
         align-self: center;
     }
     h2 {
+        z-index: 7;
         position: absolute;
-        bottom: -10px;
+        bottom: -30px;
         right: -30px;
         //        align-self: flex-end;
         font-family: $serif;
         text-transform: uppercase;
         letter-spacing: .1em;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 }

@@ -1,0 +1,73 @@
+.content{
+    background-color: $bg;
+    padding-bottom: 100px;
+    margin-bottom: 200px;
+}
+
+.full-project{
+    padding: 100px 15%;
+    
+    h2{
+
+      text-transform: uppercase;
+        font-family: $sans;
+        letter-spacing: .2em;
+        font-weight: bold;
+        font-size: 1.3em;  
+    }
+    
+    h3{
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        padding: 0 0 50px 100px;
+        color: #BCAC9A;
+    }
+    
+    a{
+        @include arrow-font;
+    }
+    
+    img{
+        padding-top: 50px;
+    }
+    
+    p{
+        padding-top: 30px;
+        text-align: right;
+    }
+
+}
+
+.icons{
+    
+    img{
+        float: right;
+        width: 8%;
+        margin-left: 5%;
+    }
+}
+
+img.logo{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.swatches{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 4%;
+    background-color: #131716;
+    &:first-child{
+            background-color: #BCAC9A;
+    }
+    &:last-child{
+            background-color: #EAF1F7;
+    }
+}

@@ -1,0 +1,39 @@
+.about-page {
+    h2 {
+        padding-top: 150px;
+        font-family: $sans;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .2em;
+        font-size: 1.5em;
+    }
+    hr {
+        margin-top: 25px;
+        margin-right: 20%;
+        width: 75%;
+        @media #{$small-width} {
+            margin-top: 50px;
+        }
+    }
+    img {
+        margin-left: 20%;
+        width: 75%;
+    }
+}
+
+.about {
+    margin: 15%;
+    display: flex;
+    flex-direction: column;
+    @media #{$small-width} {
+        flex-direction: row;
+        margin: 7%;
+    }
+    p {
+        margin-bottom: 20px;
+        @media #{$small-width} {
+            margin-left: 7%;
+        }
+    }
+}

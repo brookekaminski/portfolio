@@ -1,0 +1,59 @@
+.error{
+    margin-bottom: 50px;
+    padding: 10%;
+    border: 1px solid $brand;
+}
+
+.form {
+    padding: 100px 10% 0;
+    h2 {
+        font-family: $sans;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.3em;
+    }
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+form {
+    padding: 5%;
+    margin: 25px 0;
+    background-color: $bg;
+}
+
+input[type='text'],
+textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid $brand;
+    color: #474544;
+    font-size: .9em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-button {
+    float: right;
+    display: inline-block;
+    padding: 15px 40px;
+    background: none;
+    outline: none;
+    border: 2px solid $brand;
+    cursor: pointer;
+    font-family: $sans;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: $brand;
+    font-size: 1.1em;
+    transition: all 0.3s;
+    &:hover {
+        background: $brand;
+        color: $bg;
+    }
+}

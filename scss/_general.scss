@@ -1,0 +1,98 @@
+body {
+    background-color: $bg;
+    font-family: $serif, serif;
+    letter-spacing: .1em;
+    font-size: 1.05em;
+    color: $text;
+}
+
+h1 {
+    padding: 40px;
+    @include bold-font;
+    font-weight: 300;
+    font-size: 2em;
+    color: $text;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.clear{
+    clear: both;
+}
+
+// border frame
+
+.border-top {
+    @include border-h;
+    top: 0;
+    @media screen and (min-width:480px) {
+        @include border-h(10px);
+    }
+}
+
+.border-right {
+    @include border-v;
+    right: 0;
+    @media screen and (min-width: 480px) {
+        @include border-v(10px);
+    }
+}
+
+.border-bottom {
+    @include border-h;
+    bottom: 0;
+    @media screen and (min-width: 480px) {
+        @include border-h(10px);
+    }
+}
+
+.border-left {
+    @include border-v;
+    left: 0;
+    @media screen and (min-width: 480px) {
+        @include border-v(10px);
+    }
+}
+
+// sideways text
+
+h4.rotate-left{
+    @include rotate;
+    left: 0;
+    @media screen and (min-width: 480px) {
+
+    }
+}
+
+h4.rotate-right{
+    @include rotate;
+    right: 0;
+}
+
+// arrow animations
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+    margin: 0 12px;
+    transition: all 0.5s ease;
+    &:before {
+        @include arrow;
+        transform: rotate(40deg);
+    }
+    &:after {
+        @include arrow;
+        transform: rotate(-40deg);
+    }
+}
+
+.arrow,
+.arrow:after,
+.arrow:before {
+    height: 1px;
+    background: $brand;
+}

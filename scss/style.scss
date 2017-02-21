@@ -2,24 +2,12 @@
 
 /* CSS Document */
 
+
 /* ------------------------------- */
 /* ------------ RESET ------------ */
 /* ------------------------------- */
 
 @import "reset";
-
-/* ------------------------------- */
-/* ------------ FONTS ------------ */
-/* ------------------------------- */
-
-@font-face {
-    font-family: 'Summer Hearts';
-    src: url('summerhearts-regular-webfont.woff2') format('woff2'),
-         url('summerhearts-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 /* ------------------------------- */
 /* ---------- VARIABLES ---------- */
@@ -28,71 +16,11 @@
 @import 'vars';
 
 /* ------------------------------ */
-/* ----------- LAYOUT ----------- */
+/* ----------- MIXINS ----------- */
 /* ------------------------------ */
 
 
-/* -------- LAYOUT MIXIN -------- */
-
 @import 'mixins';
-
-/* ----------------------------- */
-/* ------- LAYOUT STYLES ------- */
-
-body {
-    background-color: $bg;
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: .1em;
-    font-size: 1.05em;
-    color: $text;
-}
-
-
-
-h1 {
-    padding: 40px;
-    @include bold-font;
-    font-weight: 300;
-    font-size: 2em;
-    color: $text;
-}
-
-p {
-    line-height: 1.4;
-}
-
-div.form{
-    float: right;
-    display: flex;
-    flex-direction: column;
-    /* align-self: center; */
-    width: 50%;
-    /* justify-content: center; */
-    align-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.border-top {
-    @include border-h;
-    top: 0;
-}
-
-.border-right {
-    @include border-v;
-    right: 0;
-}
-
-.border-bottom {
-    @include border-h;
-    bottom: 0;
-}
-
-.border-left {
-    @include border-v;
-    left: 0;
-}
-
 
 /* ------------------------------ */
 /* --------- NAVIGATION --------- */
@@ -100,15 +28,32 @@ div.form{
 
 @import 'nav';
 
+/* ------------------------------ */
+/* ----------- LAYOUT ----------- */
+/* ------------------------------ */
+
+
 @import 'content';
+
+@import 'projects';
+
+@import 'about';
+
+@import 'general';
+
+
+@import 'animation';
+
+
+/* ------------------------------ */
+/* ------------ FORM ------------ */
+/* ------------------------------ */
+
+@import 'form';
 
 /* ------------------------------ */
 /* -------- ACCESSIBILITY ------- */
 /* ------------------------------ */
-
-
-/* ------------------------------ */
-/*------- SKIP TO CONTENT -------*/
 
 @import 'accessibility';
 
@@ -117,5 +62,8 @@ div.form{
 /* ------------------------------ */
 
 @import 'footer';
+
+
+
 
 

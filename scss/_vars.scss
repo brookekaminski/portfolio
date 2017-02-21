@@ -1,9 +1,12 @@
 $bg: #FFF; //#0B0C11;
-$text: #262C3B; //#171717; // #0D0E13; //#FFF;
-$brand: #3EC7C2;//#4175C0; //#39e5c5;//#3EC7C2; // #39e5c5; //#2aedc8; // #80f2dc; // #5cc1af; //#66FCF1; // #6E8ED9; // #4285f4
+$text: #606060; //#262C3B; //#171717; // #0D0E13; //#FFF;
+$brand: #1A1A1A;//#3EC7C2;//#4175C0; //#39e5c5;//#3EC7C2; // #39e5c5; //#2aedc8; // #80f2dc; // #5cc1af; //#66FCF1; // #6E8ED9; // #4285f4
 $gradient: linear-gradient(to bottom, $brand 0%,#799ed2 100%);
 
 $sans: 'Good Headline Pro', sans-serif;
 
+$serif: 'Crimson Text';//'FreightBig Pro';// 
 
-$serif: 'Crimson Text';
+$small-width: "screen and (min-width: 600px)";
+
+$smaller-width: "screen and (min-width: 480px)";

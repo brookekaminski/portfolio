@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 435 61.69">
+  <title>title</title>
+  <g id="underline">
+    <line y1="29.4" x2="435" y2="29.4" style="fill: none;stroke: #000"/>
+  </g>
+  <g id="Brooke">
+    <text transform="translate(80.41 14.39)" style="font-size: 18px;font-family: CrimsonText-Roman, Crimson Text;letter-spacing: 1em">BROOKE</text>
+  </g>
+  <g id="Kaminski">
+    <text transform="translate(139.71 56.47)" style="font-size: 18px;font-family: CrimsonText-Roman, Crimson Text;letter-spacing: 1em">KAMINSKI</text>
+  </g>
+</svg>

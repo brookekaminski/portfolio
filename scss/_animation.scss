@@ -1,0 +1,60 @@
+svg path{
+//    stroke: #3EC7C2;
+    opacity: .4;
+}
+
+.brook{
+    position: relative;
+    width: 60%;
+    margin: 20px 10%;
+    @media #{$smaller-width} {
+        display: none;
+    }
+}
+
+
+.intro{
+    position: absolute;
+    top: 300px;
+    width: 80%;
+    margin: 0 10%;
+       @media #{$smaller-width} {
+        display: none;
+    }
+}
+
+#underline {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+    animation: dash 6s linear forwards;
+}
+
+#one, 
+#two{
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+    animation: dash 6s linear 1s forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#brooke {
+    opacity: 0;
+    animation: fade 2s 2s ease forwards;
+}
+
+// "blog" text
+#kaminski {
+    opacity: 0;
+    animation: fade 2s 3s ease forwards;
+}
+
+@keyframes fade {
+    100% {
+        opacity: 1;
+    }
+}
